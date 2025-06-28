@@ -211,7 +211,7 @@ function App() {
           lineHeight: 1.6,
           width: '100%',
         }}>
-          <h2>{resume.name}</h2>
+          <h3>{resume.name}</h3>
           <p><strong>Profile:</strong> {resume.summary}</p>
 
           <h4>Experience</h4>
