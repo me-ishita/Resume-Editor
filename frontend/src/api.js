@@ -1,4 +1,5 @@
 const BASE_URL = 'http://localhost:8000';
+const API_URL = "https://resume-backend-v92v.onrender.com"; 
 
 export const enhanceSection = async (section, content) => {
   const res = await fetch(`${BASE_URL}/ai-enhance`, {
