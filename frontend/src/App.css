@@ -1,0 +1,251 @@
+/* src/App.css */
+
+/* Global Page Styling */
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(120deg, #e0eafc, #cfdef3, #d4fc79, #96e6a1);
+  background-size: 300% 300%;
+  animation: gradientBG 20s ease infinite;
+  min-height: 100vh;
+  overflow-x: hidden;
+  color: #333;
+}
+
+/* Gradient Animation */
+@keyframes gradientBG {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+@keyframes glowFadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px) scale(0.9);
+    text-shadow: none;
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+    text-shadow: 0 0 10px rgba(138, 43, 226, 0.6),
+                 0 0 20px rgba(106, 90, 205, 0.4);
+  }
+}
+
+
+/* Container Styling */
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+.action-enhance {
+  background: linear-gradient(to right, #4facfe, #00f2fe);
+  color: #fff;
+  border: none;
+  font-weight: 600;
+  padding: 8px 16px;
+  border-radius: 12px;
+  transition: all 0.3s ease;
+}
+
+.action-enhance:hover {
+  transform: scale(1.05);
+  background: linear-gradient(to right, #00f2fe, #4facfe);
+  box-shadow: 0 6px 12px rgba(0, 242, 254, 0.3);
+}
+
+.action-add {
+  background: linear-gradient(to right, #69db7c, #38d9a9);
+  color: #fff;
+  border: none;
+  font-weight: 600;
+  padding: 8px 12px;
+  border-radius: 10px;
+  transition: all 0.3s ease;
+}
+
+.action-add:hover {
+  transform: scale(1.05);
+  background: linear-gradient(to right, #38d9a9, #69db7c);
+  box-shadow: 0 6px 12px rgba(56, 217, 169, 0.3);
+}
+
+.action-delete {
+  background: linear-gradient(to right, #ff6b6b, #f06595);
+  color: #fff;
+  border: none;
+  font-weight: 600;
+  padding: 8px 12px;
+  border-radius: 10px;
+  transition: all 0.3s ease;
+}
+
+.action-delete:hover {
+  transform: scale(1.05);
+  background: linear-gradient(to right, #f06595, #ff6b6b);
+  box-shadow: 0 6px 12px rgba(255, 107, 107, 0.3);
+}
+
+/* Card / Resume Block */
+#resume-preview {
+  background: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(14px);
+  border-radius: 20px;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.1);
+  padding: 35px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+#resume-preview:hover {
+  transform: scale(1.015);
+  box-shadow: 0 30px 80px rgba(0, 0, 0, 0.15);
+}
+
+/* Headers */
+h2 {
+  font-weight: 800;
+  font-size: 3rem;
+  text-align: center;
+  margin-bottom: 1.5rem;
+  background: linear-gradient(to right, #8e2de2, #4a00e0);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  -webkit-text-fill-color: transparent;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  animation: glowFadeIn 1.5s ease-in-out both;
+  text-shadow: 0 0 10px rgba(138, 43, 226, 0.6),
+               0 0 20px rgba(106, 90, 205, 0.4);
+}
+
+
+
+h5 {
+  font-weight: 600;
+  margin-top: 25px;
+  color: #333;
+}
+
+/* Inputs */
+input[type='text'],
+textarea,
+.form-control,
+select {
+  border: 1px solid #ccc;
+  border-radius: 12px;
+  padding: 10px 14px;
+  font-size: 1rem;
+  background-color: rgba(255, 255, 255, 0.9);
+  transition: box-shadow 0.2s ease-in-out, transform 0.2s;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+  outline: none;
+  box-shadow: 0 0 6px rgba(0, 132, 255, 0.3);
+  transform: scale(1.01);
+}
+
+/* Upload Resume Button */
+.btn-upload {
+  background: linear-gradient(45deg, #ffe066, #fab005);
+  color: #000;
+  font-weight: 600;
+  border: none;
+  border-radius: 14px;
+  padding: 10px 20px;
+  transition: all 0.3s ease;
+}
+
+.btn-upload:hover {
+  background: linear-gradient(45deg, #ffd43b, #fcc419);
+  transform: scale(1.05);
+  box-shadow: 0 6px 18px rgba(255, 200, 50, 0.4);
+}
+
+/* Save Resume Button */
+.btn-save {
+  background: linear-gradient(to right, #38d9a9, #69db7c);
+  color: #fff;
+  font-weight: 600;
+  border: none;
+  border-radius: 14px;
+  padding: 10px 20px;
+  transition: all 0.3s ease;
+}
+
+.btn-save:hover {
+  background: linear-gradient(to right, #20c997, #51cf66);
+  transform: scale(1.05);
+  box-shadow: 0 6px 18px rgba(60, 200, 120, 0.35);
+}
+
+/* Download JSON Button */
+.btn-download {
+  background: linear-gradient(to right, #e79999, #7e376d);
+  color: #fff;
+  font-weight: 600;
+  border: none;
+  border-radius: 14px;
+  padding: 10px 20px;
+  transition: all 0.3s ease;
+}
+
+.btn-download:hover {
+  background: linear-gradient(to right, #bd78b3, #a73982);
+  transform: scale(1.05);
+  box-shadow: 0 6px 18px rgba(238, 82, 82, 0.3);
+}
+
+.btn-outline-secondary {
+  background: linear-gradient(to right, #a4e1ef, #3b5b83);
+  color: #fff;
+  font-weight: 600;
+  border: none;
+  border-radius: 14px;
+  padding: 10px 20px;
+  transition: all 0.3s ease;
+}
+
+.btn-outline-secondary:hover {
+  background: linear-gradient(to right, #ced4da, #868e96);
+  transform: scale(1.05);
+  box-shadow: 0 6px 18px rgba(238, 82, 82, 0.3);
+}
+
+
+/* Add Buttons Styling (Fix cutoff) */
+button.btn-outline-success.btn-sm {
+  padding: 6px 16px;
+  font-size: 0.9rem;
+  max-width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* Input Groups */
+.input-group {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  gap: 8px;
+}
+
+/* AOS Animations */
+[data-aos] {
+  transition-property: transform, opacity !important;
+}
+
+/* PDF Print View (Optional override if needed) */
+#print-resume {
+  color: #000;
+  font-family: 'Poppins', sans-serif;
+  background: white;
+  padding: 20px;
+}

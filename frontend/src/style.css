@@ -1,0 +1,93 @@
+/* src/style.css */
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: #f4f6f8;
+  color: #333;
+}
+
+.container {
+  max-width: 900px;
+  margin: 30px auto;
+  padding: 2rem;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.1);
+}
+
+.title {
+  text-align: center;
+  color: #2c3e50;
+  margin-bottom: 2rem;
+}
+
+.section {
+  margin-bottom: 2rem;
+}
+
+.input-field, .input-area {
+  width: 100%;
+  padding: 10px;
+  margin-top: 8px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
+}
+
+.list-entry {
+  margin-bottom: 10px;
+}
+
+.button-group {
+  margin-top: 5px;
+}
+
+button {
+  margin-top: 10px;
+  margin-right: 8px;
+  padding: 8px 14px;
+  border: none;
+  border-radius: 8px;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
+}
+
+.enhance-btn {
+  background-color: #6c5ce7;
+  color: white;
+}
+
+.remove-btn {
+  background-color: #d63031;
+  color: white;
+}
+
+.add-btn {
+  background-color: #00b894;
+  color: white;
+}
+
+.upload-btn {
+  background-color: #fdcb6e;
+}
+
+.save-btn {
+  background-color: #0984e3;
+  color: white;
+}
+
+.download-btn {
+  background-color: #2d3436;
+  color: white;
+}
+
+button:hover {
+  transform: scale(1.03);
+}
+
+.button-row {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
