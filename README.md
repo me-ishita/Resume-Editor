@@ -1,62 +1,37 @@
-# 📝 Resume Editor with AI Enhancement
+# 🌟 AI-Powered Resume Editor
 
-A modern web-based Resume Editor built with **React.js** (frontend) and **FastAPI** (backend). This app lets users:
-
-- Upload and mock-parse `.pdf` or `.docx` resumes
-- Edit fields like Name, Experience, Education, Skills, and Languages
-- Enhance each section using a mock AI-powered backend
-- Save resume data via FastAPI
-- Download the resume as `.json` or `.pdf`
+An interactive web-based Resume Editor built with **React** and **FastAPI**. Users can upload, edit, enhance, and download resumes with a beautiful, premium-styled interface.
 
 ---
 
-## ✨ Features
+## 🚀 Live Demo
 
-### 🔧 Core Functionalities
-
-✅ **Upload Resume**  
-- Accepts `.pdf` or `.docx` (mock parsing used)
-
-✅ **Edit Resume**  
-- Editable fields: Name, Summary, Experience, Education, Skills, Languages  
-- Add/remove entries dynamically  
-- Select language proficiency (Advanced, Intermediate, Beginner)
-
-✅ **Enhance with AI**  
-- Each section has an **"Enhance with AI"** button  
-- Sends content to FastAPI backend (`/ai-enhance`)  
-- Receives and displays improved text (mocked)
-
-✅ **Save & Download**  
-- Resume data saved via FastAPI (`/save-resume`)  
-- Downloads: `.json` (structured data), `.pdf` (formatted layout)
+[![Live Demo](https://img.shields.io/badge/🌐%20View%20Live-Resume%20Editor-007cf0?style=for-the-badge)](https://resume-frontend-z7l2.onrender.com)
 
 ---
 
-## 🎨 UI & Styling
+## 📌 Features
 
-- Styled with **Bootstrap 5**, **Bootstrap Icons**, **AOS animations**
-- Gradient backgrounds, glowing button hover effects
-- Premium visual layout optimized for frontend evaluations
-
----
-
-| Layer         | Technology                  | Badge                                                                                                               |
-| ------------- | --------------------------- | ------------------------------------------------------------------------------------------------------------------- |
-| 💻 Frontend   | **React.js**                | ![React](https://img.shields.io/badge/React-20232A?style=flat\&logo=react\&logoColor=61DAFB)                        |
-| 🎨 Styling    | **Bootstrap 5**             | ![Bootstrap](https://img.shields.io/badge/Bootstrap-563D7C?style=flat\&logo=bootstrap\&logoColor=white)             |
-| 🎬 Animation  | **AOS (Animate on Scroll)** | ![AOS](https://img.shields.io/badge/AOS-Lightblue?style=flat\&logo=databricks\&logoColor=white)                     |
-| 🧠 Backend    | **FastAPI**                 | ![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=flat\&logo=fastapi\&logoColor=white)                   |
-| 🐍 Language   | **Python 3**                | ![Python](https://img.shields.io/badge/Python-3776AB?style=flat\&logo=python\&logoColor=white)                      |
-| 🧾 PDF Export | **html2pdf.js**             | ![html2pdf.js](https://img.shields.io/badge/html2pdf.js-F28C28?style=flat\&logo=javascript\&logoColor=white)        |
-| 🗂️ Icons     | **Bootstrap Icons**         | ![Bootstrap Icons](https://img.shields.io/badge/Bootstrap_Icons-7952B3?style=flat\&logo=bootstrap\&logoColor=white) |
-
+- 📝 Upload `.pdf` or `.docx` resume files (mocked parsing)
+- ✏️ Edit name, summary, experience, education, skills, and language proficiency
+- 🤖 "Enhance with AI" feature for each section
+- 💾 Save resume data to backend (mocked FastAPI)
+- 📥 Download final resume as `.json` or `.pdf`
+- 🎨 Fully responsive, animated UI with Bootstrap, AOS & gradient styles
 
 ---
 
-## 🚀 Getting Started
+## 🛠 Tech Stack
 
-### 🔹 Clone the Repository
+| Frontend                        | Backend              |
+|-------------------------------|----------------------|
+| ![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react) | ![FastAPI](https://img.shields.io/badge/FastAPI-005571?style=for-the-badge&logo=fastapi) |
+| ![Bootstrap](https://img.shields.io/badge/Bootstrap-563D7C?style=for-the-badge&logo=bootstrap) | ![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python) |
+| ![HTML2PDF](https://img.shields.io/badge/html2pdf.js-lightgrey?style=for-the-badge) | ![Pydantic](https://img.shields.io/badge/Pydantic-0A0A0A?style=for-the-badge) |
+
+---
+
+## 📦 Installation (Local Setup)
 
 ```bash
 git clone https://github.com/me-ishita/resume-editor.git
@@ -70,7 +45,6 @@ cd frontend
 npm install
 npm start
 
-
 ## 🔹 Backend Setup (FastAPI)
 
 cd backend
@@ -81,6 +55,5 @@ source venv/bin/activate   # On Mac/Linux
 
 pip install -r requirements.txt
 uvicorn main:app --reload
-
 
 
